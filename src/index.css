@@ -1,1 +1,18 @@
 @import "tailwindcss";
+@plugin '@tailwindcss/typography';
+
+@plugin "daisyui" {
+	themes:dracula,winter;
+}
+
+
+
+@layer components {
+	.align-element {
+		@apply mx-auto max-w-6xl
+	}
+}
+
+button {
+	text-transform: uppercase;
+}
